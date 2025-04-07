@@ -30,6 +30,7 @@ python main.py
 │   .env  # все переменные
 │   bot.service
 │   config.py
+│   Dockerfile
 │   main.py  # основной файл
 │   requirements.txt
 │
