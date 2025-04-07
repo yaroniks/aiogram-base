@@ -1,0 +1,6 @@
+pytz
+aiogram
+aiosqlite
+SQLAlchemy
+python-dotenv
+pydantic-settings
