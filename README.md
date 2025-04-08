@@ -27,11 +27,10 @@ python main.py
 Структура файлов:
 
 ```
-│   .env  # все переменные
-│   bot.service
-│   config.py
+│   .env
+│   config.py  # настройки, доступ к .env
 │   Dockerfile
-│   main.py  # основной файл
+│   main.py  # основной файл бота
 │   requirements.txt
 │
 └───app
@@ -42,9 +41,9 @@ python main.py
     ├───buttons  # обработчик кнопок
     │
     ├───database
-    │   │   base.py  # базовый класс sqlalchemy
+    │   │   base.py  # базовый класс
     │   │
-    │   └───models  # модели sqlalchemy
+    │   └───models  # модели sqlaclhemy и запросы в бд
     │
     ├───states  # обработчики состояний
     │

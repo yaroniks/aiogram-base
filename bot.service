@@ -1,8 +1,0 @@
-[Unit]
-Description=BOT_NAME
-After=network.target
-[Service]
-WorkingDirectory=/var/FOLDER/
-ExecStart=/var/FOLDER/.venv/bin/python /var/FOLDER/main.py
-[Install]
-WantedBy=multi-user.target

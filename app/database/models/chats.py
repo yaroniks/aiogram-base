@@ -1,9 +1,8 @@
 from config import settings
 from app.utils.enums import *
-from app.database.base import Base
-from app.database.base import async_session
-from sqlalchemy import select, update, delete
 from sqlalchemy.orm import Mapped, mapped_column
+from app.database.base import Base, async_session
+from sqlalchemy import select, update, delete, func
 from sqlalchemy import BIGINT, String, Enum, ForeignKey, Boolean
 
 
