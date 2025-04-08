@@ -3,7 +3,7 @@
 Установка:
 
 ```bash
-git clone https://github.com/yaroniks/aiogram-base
+git clone https://github.com/yaroniks/aiogram-base.git
 cd aiogram-base
 ```
 
