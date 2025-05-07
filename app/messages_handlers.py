@@ -7,5 +7,5 @@ router = Router(name='Messages')
 
 
 @router.message()
-async def messages(message: types.Message):
+async def message_handler(message: types.Message):
     ...

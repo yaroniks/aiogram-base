@@ -9,11 +9,11 @@ router = Router(name='Commands')
 
 
 @router.message(CommandStart())
-async def start(message: types.Message):
+async def start_command(message: types.Message):
     await Chat.add_chat(message.chat.id)
     ...
 
 
 @router.message(Command('help'))
-async def help(message: types.Message):
+async def help_command(message: types.Message):
     ...
