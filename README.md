@@ -27,8 +27,10 @@ python main.py
 Структура файлов:
 
 ```
-│   .env
+│   .env  # переменные
+│   bot.py  # бот и диспетчер
 │   config.py  # настройки, доступ к .env
+│   docker-compose.yml
 │   Dockerfile
 │   main.py  # основной файл бота
 │   requirements.txt
