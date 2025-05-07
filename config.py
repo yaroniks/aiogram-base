@@ -6,6 +6,7 @@ class Settings(BaseSettings):
 
     VERSION: str
     BOT_TOKEN: str
+
     SQL_URL: str
 
 
