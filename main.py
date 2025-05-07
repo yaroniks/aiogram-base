@@ -9,13 +9,13 @@ from app.database.base import async_main
 logging.basicConfig(level=logging.INFO)
 
 
-@bot.pre_checkout_query()
-async def pre_checkout_handler(pre_checkout_query: types.PreCheckoutQuery):
+@dp.pre_checkout_query()
+async def pre_checkout_query_handler(pre_checkout_query: types.PreCheckoutQuery):
     await pre_checkout_query.answer(ok=True)
 
 
-@bot.message(F.successful_payment)
-async def successful_payment(message: types.Message):
+@dp.message(F.successful_payment)
+async def successful_payment_handler(message: types.Message):
     await message.answer(f'Успешно произведена оплата {message.successful_payment.total_amount} ⭐\n'
                          f'ID операции: `{message.successful_payment.telegram_payment_charge_id}`',
                          parse_mode='MARKDOWN')
