@@ -38,7 +38,8 @@ async def main():
     # task = loop.create_task(TestLoop())
 
     dp.include_routers(
-        commands_router, main_state_router, main_buttons_router, messages_router
+        commands_router, main_state_router, main_buttons_router,
+        messages_router
     )
     try:
         await dp.start_polling(bot)

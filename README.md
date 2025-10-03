@@ -53,3 +53,5 @@ python main.py
             enums.py  # все Enum'ы
             general.py
 ```
+
+Автор: Yarovich
