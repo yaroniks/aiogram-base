@@ -1,14 +1,15 @@
 # Базовый шаблон aiogram бота
 
-Установка:
-
+Запуск через докер:
 ```bash
-git clone https://github.com/yaroniks/aiogram-base.git
-cd aiogram-base
+docker build -t aiogram-bot .
+docker run -d aiogram-bot 
 ```
 
-Настройте файл .env под себя и далее:
+---
 
+Установка без докера: <br>
+Настройте файл .env под себя и далее:
 ```bash
 python -m venv .venv
 .venv\scripts\activate  # для windows
@@ -17,7 +18,6 @@ pip install -r requirements.txt
 ```
 
 Запуск:
-
 ```bash
 python main.py
 ```
@@ -30,10 +30,8 @@ python main.py
 │   .env  # переменные
 │   bot.py  # бот и диспетчер
 │   config.py  # настройки, доступ к .env
-│   docker-compose.yml
-│   Dockerfile
 │   main.py  # основной файл бота
-│   requirements.txt
+│   requirements.txt  # необходимые для работы библиотеки
 │
 └───app
     │   commands_handlers.py # обработчик команд
@@ -51,7 +49,6 @@ python main.py
     │
     └───utils  # разные инструменты
             enums.py  # все Enum'ы
-            general.py
 ```
 
 Автор: Yarovich
