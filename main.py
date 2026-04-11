@@ -1,12 +1,19 @@
-import asyncio
-import logging
 from app import *
 from bot import bot, dp
-from app.utils import *
-from aiogram import types, F
+import app.utils as utils
 from app.database.base import async_main
 
-logging.basicConfig(level=logging.INFO)
+import asyncio
+import logging
+from aiogram import types, F
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s | %(levelname)-8s | %(name)-20s | %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S',
+    handlers=[logging.StreamHandler()]
+)
+logger = logging.getLogger(__name__)
 
 
 @dp.pre_checkout_query()

@@ -1,12 +1,11 @@
-import os
-from pytz import timezone
 from config import settings
+
+import logging
+from pytz import timezone
 from typing import Union, Optional, Any
 from datetime import datetime, timedelta
 
-
-def log(text: Any) -> None:
-    print(f'[{time_now("%Y-%m-%d %H:%M:%S")}] [INFO]: {text}', flush=True)
+logger = logging.getLogger(__name__)
 
 
 def time_now(strftime: str = None, location: str = 'Europe/Moscow') -> Union[datetime, str]:

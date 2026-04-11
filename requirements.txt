@@ -2,5 +2,6 @@ pytz
 aiogram
 aiosqlite
 SQLAlchemy
+aiohttp-socks
 python-dotenv
 pydantic-settings

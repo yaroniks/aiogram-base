@@ -1,10 +1,13 @@
-from app.utils import *
+import app.utils as utils
 import app.keyboards as kb
 from config import settings
 from app.database.models import *
+
+import logging
 from aiogram import types, F, Router
 from aiogram.types import InlineKeyboardButton
 
+logger = logging.getLogger(__name__)
 router = Router(name='Buttons')
 
 
