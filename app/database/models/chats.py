@@ -18,3 +18,10 @@ class Chat(Base):
             if not chat:
                 session.add(Chat(id=chat_id))
                 await session.commit()
+
+    @staticmethod
+    async def get_chat(chat_id: int) -> Optional['Chat']:
+        """Получить чат по ID"""
+        async with async_session() as session:
+            chat = await session.scalar(select(Chat).where(Chat.chat_id == chat_id))
+            return chat
