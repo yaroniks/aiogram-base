@@ -5,3 +5,4 @@ SQLAlchemy
 aiohttp-socks
 python-dotenv
 pydantic-settings
+sqlalchemy[asyncio]
